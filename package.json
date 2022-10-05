@@ -1,0 +1,44 @@
+{
+  "name": "cdk",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "cdk-bootstrap-local": "tsc && cdk bootstrap -c config=local --profile weddingdaytimeline",
+    "cdk-bootstrap-dev": "tsc && cdk bootstrap -c config=dev --profile weddingdaytimeline",
+    "cdk-bootstrap-test": "tsc && cdk bootstrap -c config=test --profile weddingdaytimeline",
+    "cdk-bootstrap-prod": "tsc && cdk bootstrap -c config=production --profile weddingdaytimeline",
+    "cdk-synth-local": "tsc && cdk synth -c config=local --profile weddingdaytimeline",
+    "cdk-synth-dev": "tsc && cdk synth -c config=dev --profile weddingdaytimeline",
+    "cdk-synth-test": "tsc && cdk synth -c config=test --profile weddingdaytimeline",
+    "cdk-synth-prod": "tsc && cdk synth -c config=production --profile weddingdaytimeline",
+    "cdk-diff-local": "tsc && cdk diff -c config=local --profile weddingdaytimeline",
+    "cdk-diff-dev": "tsc && cdk diff -c config=dev --profile weddingdaytimeline",
+    "cdk-diff-test": "tsc && cdk diff -c config=test --profile weddingdaytimeline",
+    "cdk-diff-prod": "tsc && cdk diff -c config=production --profile weddingdaytimeline",
+    "cdk-deploy-local": "tsc && cdk deploy -c config=local --profile weddingdaytimeline --require-approval=never --progress=events",
+    "cdk-deploy-dev": "tsc && cdk deploy -c config=dev --profile weddingdaytimeline --require-approval=never --progress=events",
+    "cdk-deploy-test": "tsc && cdk deploy -c config=test --profile weddingdaytimeline --require-approval=never --progress=events",
+    "cdk-deploy-prod": "tsc && cdk deploy -c config=production --profile weddingdaytimeline --require-approval=never --progress=events",
+    "cdk-destroy-local": "cdk destroy -c config=local --profile weddingdaytimeline",
+    "cdk-destroy-dev": "cdk destroy -c config=dev --profile weddingdaytimeline",
+    "cdk-destroy-test": "cdk destroy -c config=test --profile weddingdaytimeline"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "10.17.27",
+    "@types/prettier": "2.6.0",
+    "aws-cdk": "2.44.0",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.44.0",
+    "constructs": "^10.0.0"
+  }
+}
